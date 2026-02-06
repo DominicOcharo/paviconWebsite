@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="80" viewBox="0 0 360 80" role="img" aria-label="Pavicon Group logo horizontal">
+  <rect width="70" height="70" rx="10" fill="#0B6FB5"/>
+  <path d="M22 16 L52 40 L22 64 Z" fill="#00A86B" transform="translate(6,0)"/>
+  <text x="94" y="47" font-family="Exo, Rubik, sans-serif" font-weight="800" font-size="36" fill="#0B6FB5">Pavicon</text>
+  <text x="94" y="68" font-family="Rubik, sans-serif" font-weight="500" font-size="12" fill="#6E777D">Group</text>
+</svg>
