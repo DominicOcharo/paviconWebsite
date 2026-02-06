@@ -1,23 +1,97 @@
-:root{
-  --color-primary:#0B6FB5;
-  --color-primary-2:#0B6FB5;
-  --color-secondary:#00A86B;
-  --color-secondary:rgba(0,168,107,.20);
-  --primary-100:#eaf6ff;
-  --primary-200:#cfeeff;
-  --primary-300:#9ed8fb;
-  --primary-400:#5fb0ea;
-  --primary-500:#0B6FB5;
-  --primary-600:#0A5EA0;
-  --primary-700:#094D8A;
-  --secondary-100:#e6fbf1;
-  --secondary-200:#c2f5dd;
-  --secondary-300:#9defc8;
-  --secondary-400:#5fe0a0;
-  --secondary-500:#00C27F;
-  --secondary-700:#00A86B;
+:root {
+  /* Brand Palette */
+  --color-primary: #2E2C6D;
+  /* Deep Navy/Purple */
+  --color-primary-2: #666493;
+  /* Muted Purple (Secondary) */
+  --color-accent: #ED8425;
+  /* Orange (Primary Accent) */
+  --color-accent-2: #F1A35D;
+  /* Light Orange (Secondary Accent) */
+  --color-accent-soft: #F7C79D;
+  /* Pale Orange (Soft Accent) */
+  --color-neutral-light: #E8E1E1;
+  /* Warm Gray */
+  --color-white: #FFFFFF;
+  --color-bg: #FFFFFF;
+  --color-surface: #E8E1E1;
+
+  /* Mappings to existing system */
+  --color-secondary: var(--color-accent);
+  --color-secondary-rgb: 237, 132, 37;
+  /* Approximate RGB for #ED8425 */
+  --color-body: #111111;
+  --color-body-2: #222222;
+  --color-heading-1: var(--color-primary);
+
+  /* Overrides for specific shades if used in style.css */
+  --primary-500: var(--color-primary);
+  --secondary-500: var(--color-accent);
+  --secondary-600: var(--color-accent);
 }
 
 /* Additional small theme helpers */
-.header-mid-one-wrapper .logo-area img{max-height:60px}
-.tmp-btn.btn-primary{background:var(--color-primary);border-color:var(--color-primary)}
+.header-mid-one-wrapper .logo-area img {
+  max-height: 60px
+}
+
+.tmp-btn.btn-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary)
+}
+
+.tmp-btn.btn-primary:hover {
+  background: var(--color-primary-2);
+  border-color: var(--color-primary-2)
+}
+
+/* Footer Copyright Area Override */
+/* Footer Copyright Area Override */
+.copyright-area-one,
+.copyright-area-one.cg {
+  background: var(--color-heading-1) !important;
+  color: var(--color-white) !important;
+}
+
+.copyright-area-one p,
+.copyright-area-one a,
+.copyright-area-one.cg p,
+.copyright-area-one.cg a {
+  color: var(--color-white) !important;
+}
+
+
+.copyright-area-one a:hover,
+.copyright-area-one.cg a:hover {
+  color: var(--color-accent) !important;
+}
+
+/* Main Footer Area Override */
+.footer-one,
+.tmp-footer-area .footer-one,
+.main-footer-one-area {
+  background: var(--color-heading-1) !important;
+  background-image: none !important;
+}
+
+.footer-one .footer-title,
+.footer-one .desc,
+.footer-one .social-share-wrapper-1 li a,
+.footer-one .single-footer-inner .body .use-full-link-wrapper a,
+.footer-one .single-footer-inner .body .contactus-link-wrapper .single .text,
+.footer-one .single-footer-inner .body .contactus-link-wrapper .single .phone p,
+.footer-one .single-footer-inner .body .contactus-link-wrapper .single .phone a,
+.footer-one .newsletter-area .desc {
+  color: var(--color-white) !important;
+}
+
+.footer-one .single-footer-inner .body .use-full-link-wrapper a:hover,
+.footer-one .single-footer-inner .body .contactus-link-wrapper .single .phone a:hover {
+  color: var(--color-accent) !important;
+}
+
+.footer-one .newsletter-area .form-btn {
+  background: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+  color: var(--color-white) !important;
+}
