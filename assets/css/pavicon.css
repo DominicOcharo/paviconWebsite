@@ -284,6 +284,14 @@ p {
     display: none !important;
 }
 
+/* Vision & Mission and Core Values Text Color */
+.testimonial-caption h3,
+.testimonial-caption h4,
+.testimonial-caption .founder-text p,
+.testimonial-caption .founder-text span {
+    color: var(--primary-orange) !important;
+}
+
 /* Statement Area Styling (About Page) */
 .statement-area {
     padding-top: 60px !important;
