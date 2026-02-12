@@ -1,0 +1,336 @@
+/* ===================================
+   Service Details Page Styling
+   =================================== */
+
+/* Sub-service cards */
+.sub-service-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.sub-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sub-service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.sub-service-card:hover .sub-service-icon {
+    transform: rotate(360deg);
+}
+
+.sub-service-icon i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.sub-service-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2B7B;
+    margin-bottom: 15px;
+}
+
+.sub-service-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.sub-service-card .additional-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 3px solid #FF6B35;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Service features list */
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.service-features li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.service-features li i {
+    color: #FF6B35;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* Portfolio section */
+.portfolio-section {
+    background: linear-gradient(135deg, #1F2B7B 0%, #2A3B8F 100%);
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.portfolio-section h3 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.portfolio-item h5 {
+    color: #FF6B35;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-item h5 i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.portfolio-item p {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta-section h3 {
+    color: #1F2B7B;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.cta-section .btn {
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-primary {
+    background: #FF6B35;
+    border-color: #FF6B35;
+    color: #fff;
+}
+
+.cta-section .btn-primary:hover {
+    background: #ff5722;
+    border-color: #ff5722;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+.cta-section .btn-outline {
+    background: transparent;
+    border: 2px solid #1F2B7B;
+    color: #1F2B7B;
+}
+
+.cta-section .btn-outline:hover {
+    background: #1F2B7B;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+/* Main service description */
+.service-main-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sub-services section */
+.sub-services-section h3 {
+    color: #1F2B7B;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.sub-services-section h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: #FF6B35;
+}
+
+/* Loading placeholder */
+.loading-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.wow.animated {
+    visibility: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sub-service-card {
+        margin-bottom: 20px;
+    }
+
+    .cta-section .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .ml-20 {
+        margin-left: 0;
+    }
+
+    .portfolio-section {
+        padding: 30px 20px;
+    }
+}
+
+/* Service details image */
+.details-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce spacing between hero and content */
+.services-details-area {
+    padding-top: 20px;
+}
+
+.services-details-area .single-services {
+    padding-top: 0;
+}
+
+/* Reduce spacing on main services page */
+.services-area1.section-padding30 {
+    padding-top: 20px;
+}
+
+/* Service detail image (400x300) - Float left with text wrap */
+.service-detail-image {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.service-detail-image .service-image {
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detail-image .service-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Clear float after service description */
+.service-main-description {
+    overflow: hidden;
+}
+
+/* Clear floats for sections below */
+.sub-services-section {
+    clear: both;
+}
+
+/* Responsive adjustments for service image */
+@media (max-width: 992px) {
+    .service-detail-image {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .service-detail-image .service-image {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+}
+
+/* Override padding for single-services on details page */
+.services-details-area .single-services {
+    padding: 0;
+}
+
+/* Override hero title color for service details */

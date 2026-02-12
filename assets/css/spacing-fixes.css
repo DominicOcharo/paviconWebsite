@@ -1,0 +1,333 @@
+/* ========================================
+   SPACING FIXES - Reduce Excessive Whitespace
+   ======================================== */
+
+/* Reduce container side padding */
+.container,
+.container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-fluid {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+/* Reduce section padding */
+.section-padding,
+.section-padding30 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.section-padding2 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+@media (min-width: 768px) {
+
+    .section-padding,
+    .section-padding30 {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .section-padding2 {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+/* Reduce margin bottom utilities */
+.mb-10 {
+    margin-bottom: 5px !important;
+}
+
+.mb-20 {
+    margin-bottom: 10px !important;
+}
+
+.mb-30 {
+    margin-bottom: 15px !important;
+}
+
+.mb-40 {
+    margin-bottom: 20px !important;
+}
+
+.mb-50 {
+    margin-bottom: 25px !important;
+}
+
+.mb-60 {
+    margin-bottom: 30px !important;
+}
+
+.mb-70 {
+    margin-bottom: 35px !important;
+}
+
+.mb-80 {
+    margin-bottom: 40px !important;
+}
+
+.mb-90 {
+    margin-bottom: 45px !important;
+}
+
+.mb-100 {
+    margin-bottom: 50px !important;
+}
+
+/* Reduce margin top utilities */
+.mt-10 {
+    margin-top: 5px !important;
+}
+
+.mt-20 {
+    margin-top: 10px !important;
+}
+
+.mt-30 {
+    margin-top: 15px !important;
+}
+
+.mt-40 {
+    margin-top: 20px !important;
+}
+
+.mt-50 {
+    margin-top: 25px !important;
+}
+
+/* Reduce padding utilities */
+.pt-100,
+.pt-120 {
+    padding-top: 50px !important;
+}
+
+.pb-100,
+.pb-120 {
+    padding-bottom: 50px !important;
+}
+
+@media (min-width: 768px) {
+    .pt-100 {
+        padding-top: 70px !important;
+    }
+
+    .pt-120 {
+        padding-top: 80px !important;
+    }
+
+    .pb-100 {
+        padding-bottom: 70px !important;
+    }
+
+    .pb-120 {
+        padding-bottom: 80px !important;
+    }
+}
+
+/* Card spacing fixes */
+.single-service-cap,
+.services-caption,
+.single-cat,
+.project-caption,
+.single-footer-caption {
+    margin-bottom: 20px !important;
+}
+
+/* Row gutters - reduce spacing between columns */
+.row {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+.row>[class*="col-"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* Services area spacing */
+.services-area .row,
+.wantToWork-area .row,
+.categories-area .row {
+    margin-bottom: 0 !important;
+}
+
+/* About area spacing */
+.about-details {
+    padding: 30px 20px !important;
+}
+
+@media (min-width: 768px) {
+    .about-details {
+        padding: 40px 30px !important;
+    }
+}
+
+/* Team/Testimonial area spacing */
+.team-area,
+.testimonial-area,
+.brand-area {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+@media (min-width: 768px) {
+
+    .team-area,
+    .testimonial-area,
+    .brand-area {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+}
+
+/* Footer spacing */
+.footer-padding {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+}
+
+@media (min-width: 768px) {
+    .footer-padding {
+        padding-top: 60px !important;
+        padding-bottom: 40px !important;
+    }
+}
+
+/* Hero section spacing */
+.slider-height {
+    min-height: 100vh !important;
+    height: 100vh !important;
+}
+
+.slider-height2 {
+    min-height: 500px !important;
+}
+
+@media (min-width: 768px) {
+    .slider-height {
+        min-height: 100vh !important;
+        height: 100vh !important;
+    }
+
+    .slider-height2 {
+        min-height: 400px !important;
+    }
+}
+
+/* Contact form spacing */
+.contact-form {
+    padding: 30px 20px !important;
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        padding: 40px 30px !important;
+    }
+}
+
+/* Blog area spacing */
+.blog_area,
+.blog_right_sidebar {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+@media (min-width: 768px) {
+    .blog_area {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+}
+
+/* Project/Portfolio spacing */
+.project-area,
+.portfolio-area {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+@media (min-width: 768px) {
+
+    .project-area,
+    .portfolio-area {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+}
+
+/* Reduce spacing in service details */
+.services-details-area {
+    padding: 50px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .services-details-area {
+        padding: 70px 0 !important;
+    }
+}
+
+/* Client/Partner logo grid spacing */
+.client-logo-grid,
+.partner-logo-grid {
+    gap: 15px !important;
+}
+
+.client-logo-grid img,
+.partner-logo-grid img {
+    margin: 5px !important;
+}
+
+/* Certifications grid spacing */
+.certification-grid {
+    gap: 20px !important;
+}
+
+/* Reduce excessive spacing in specific sections */
+.wantToWork-caption {
+    padding: 30px 20px !important;
+}
+
+@media (min-width: 768px) {
+    .wantToWork-caption {
+        padding: 40px 30px !important;
+    }
+}
+
+/* Vision & Mission section */
+.vision-mission-area {
+    padding: 50px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .vision-mission-area {
+        padding: 70px 0 !important;
+    }
+}
+
+/* Why Choose Us section */
+.why-choose-area {
+    padding: 50px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .why-choose-area {
+        padding: 70px 0 !important;
+    }
+}

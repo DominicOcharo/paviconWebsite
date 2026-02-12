@@ -1,0 +1,326 @@
+:root {
+    --primary-navy: #2E2C6D;
+    --primary-orange: #ED8426;
+    --secondary-indigo: #686695;
+    --light-lavender: #9F9EBC;
+    --soft-peach: #F5BB86;
+    --off-white: #E9E1DF;
+    --white: #ffffff;
+}
+
+/* Global Backgrounds */
+body {
+    background-color: var(--off-white);
+    color: var(--primary-navy);
+}
+
+.white-bg {
+    background-color: var(--white) !important;
+}
+
+.gray-bg,
+.brand-bg,
+.testimonial-bg {
+    background-color: var(--off-white) !important;
+}
+
+/* Alternating Sections - soft peach for contrast */
+.section-bg-alt {
+    background-color: rgba(245, 187, 134, 0.1) !important;
+    /* Soft peach with low opacity */
+}
+
+/* Typography Colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-navy) !important;
+}
+
+p {
+    color: var(--primary-navy);
+}
+
+/* Header & Nav */
+.header-area,
+.main-header {
+    background-color: var(--primary-navy) !important;
+}
+
+.header-bottom {
+    background-color: var(--off-white) !important;
+}
+
+.header-sticky.sticky-bar.sticky {
+    background-color: var(--off-white) !important;
+}
+
+.main-menu ul li a {
+    color: var(--primary-navy) !important;
+    font-weight: 600;
+    /* Added weight for better visibility */
+}
+
+.main-menu ul li:hover>a {
+    color: var(--primary-orange) !important;
+}
+
+/* Buttons */
+.btn,
+.boxed-btn,
+.white-btn {
+    background: var(--primary-orange) !important;
+    color: var(--white) !important;
+    border: none !important;
+}
+
+.btn::before,
+.white-btn::before {
+    background: var(--primary-navy) !important;
+}
+
+.btn:hover,
+.boxed-btn:hover,
+.white-btn:hover {
+    color: var(--white) !important;
+}
+
+/* Footer */
+.footer-area {
+    background-color: var(--primary-navy) !important;
+}
+
+.footer-tittle h4 {
+    color: var(--white) !important;
+}
+
+.footer-pera p,
+.footer-tittle ul li a,
+.footer-copy-right p {
+    color: var(--light-lavender) !important;
+}
+
+.footer-social a {
+    background-color: var(--secondary-indigo) !important;
+    border: 1px solid var(--secondary-indigo) !important;
+}
+
+.footer-social a i {
+    color: var(--white) !important;
+}
+
+.footer-social a:hover {
+    background-color: var(--primary-orange) !important;
+    border-color: var(--primary-orange) !important;
+    border-color: var(--primary-orange) !important;
+}
+
+/* Logo Dimensions */
+.logo img {
+    width: 246px !important;
+    height: 52px !important;
+    object-fit: contain;
+    /* Ensures logo isn't distorted */
+}
+
+.footer-logo img {
+    width: 250px !important;
+    height: 55px !important;
+    object-fit: contain;
+}
+
+.small-logo img {
+    width: 47px !important;
+    height: 52px !important;
+    object-fit: contain;
+}
+
+/* Service Cards & Features */
+.single-service-cap {
+    background-color: var(--white);
+    border: 1px solid var(--light-lavender);
+}
+
+.single-service-cap .service-cap {
+    background-color: var(--white);
+}
+
+.single-service-cap:hover .service-cap h4 a {
+    color: var(--primary-orange) !important;
+}
+
+/* Hero Section */
+.slider-area .hero__caption h1 {
+    color: var(--primary-orange) !important;
+}
+
+.slider-area .hero__caption .stock-text h2:nth-child(2) {
+    color: var(--primary-orange) !important;
+}
+
+/* Section Titles */
+.section-tittle .front-text h2 {
+    color: var(--primary-navy) !important;
+}
+
+.section-tittle span.back-text {
+    -webkit-text-stroke: 1px var(--light-lavender);
+    opacity: 0.3;
+}
+
+/* Contact Info */
+.contact-info__icon i {
+    color: var(--primary-orange) !important;
+}
+
+/* Forms */
+.form-control {
+    background-color: var(--white) !important;
+    border: 1px solid var(--light-lavender) !important;
+}
+
+
+.form-control:focus {
+    border-color: var(--primary-orange) !important;
+}
+
+/* Service Image Fix */
+.single-service-cap .service-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+
+.single-service-cap .service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Service Card Equal Height Fix */
+.services-area1 .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-area1 .col-xl-4,
+.services-area1 .col-lg-4,
+.services-area1 .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-service-cap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Ensure it takes full height */
+}
+
+.single-service-cap .service-cap {
+    flex: 1;
+    /* Allow content to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Push 'Read More' to bottom if needed, or just fill space */
+}
+
+/* Inner Page Hero Styling - Global */
+.hero-cap h2 {
+    color: var(--primary-orange) !important;
+}
+
+.hero-cap .breadcrumb .breadcrumb-item,
+.hero-cap .breadcrumb .breadcrumb-item a {
+    color: var(--white) !important;
+}
+
+.hero-cap .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--white) !important;
+}
+
+/* "Let's discuss" Section Title - Global */
+.section-tittle.section-tittle4 .front-text h2 {
+    color: var(--white) !important;
+}
+
+/* "Our Vision & Mission" and "Our Core Values" Section Title - Global */
+.section-tittle.section-tittle6 .front-text h2 {
+    color: var(--white) !important;
+}
+
+/* CountDown Area Fixes */
+.count-area .count-clients .single-counter .count-number span {
+    display: inline-block !important;
+}
+
+.count-area .count-clients .single-counter {
+    align-items: center !important;
+}
+
+/* "Let's discuss" Spacing Fix */
+.contact-with-area {
+    padding-top: 80px !important;
+    padding-bottom: 150px !important;
+}
+
+/* CountDown Text & Spacing Refinement */
+.count-area .count-clients .single-counter .count-text h5 {
+    font-size: 22px !important;
+    white-space: nowrap !important;
+}
+
+.count-area {
+    margin-bottom: 50px !important;
+}
+
+/* Hide Background Text Globally */
+.back-text {
+    display: none !important;
+}
+
+/* Statement Area Styling (About Page) */
+.statement-area {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+.statement-area .support-caption {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.statement-area .section-tittle h2 {
+    margin-bottom: 30px;
+}
+
+.statement-area h5 {
+    color: var(--primary-navy);
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.statement-area ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    list-style: none !important;
+}
+
+.statement-area ul li::before {
+    content: "•";
+    color: var(--primary-orange);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
