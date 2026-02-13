@@ -199,13 +199,13 @@
 
 /* Footer spacing */
 .footer-padding {
-    padding-top: 50px !important;
+    padding-top: 70px !important;
     padding-bottom: 30px !important;
 }
 
 @media (min-width: 768px) {
     .footer-padding {
-        padding-top: 60px !important;
+        padding-top: 90px !important;
         padding-bottom: 40px !important;
     }
 }
@@ -260,7 +260,7 @@
 .project-area,
 .portfolio-area {
     padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 20px !important;
 }
 
 @media (min-width: 768px) {
@@ -268,7 +268,7 @@
     .project-area,
     .portfolio-area {
         padding-top: 70px !important;
-        padding-bottom: 70px !important;
+        padding-bottom: 30px !important;
     }
 }
 

@@ -128,11 +128,12 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap pt-100">
-                                <h2>projects Details</h2>
+                                <h2 id="project-title-hero">Project Details</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">projects Details</a></li>
+                                        <li class="breadcrumb-item"><a href="project.html">Projects</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Details</a></li>
                                     </ol>
                                 </nav>
                             </div>
@@ -142,40 +143,80 @@
             </div>
         </div>
         <!-- slider Area End-->
-        <!-- Services Details Start -->
-        <div class="services-details-area">
+
+        <!-- Project Details Start -->
+        <div class="services-details-area section-padding2">
             <div class="container">
-                <div class="row">
+                <!-- Header Row -->
+                <div class="row mb-50">
                     <div class="col-12">
-                        <div class="single-services section-padding2">
-                            <div class="details-img mb-40">
-                                <img src="assets/img/gallery/project_details.jpg" alt="">
+                        <div style="display: flex; align-items: flex-start;">
+                            <div class="portfolio-icon" style="margin-right: 20px;">
+                                <!-- Icon: Using a flaticon or fontawesome if available, otherwise an image or SVG. 
+                                     The user image shows a cable/wire icon. I'll use a FontAwesome icon for now or an SVG if I can find one. 
+                                     I will use a generic 'project' icon for now, customized to orange. -->
+                                <i class="fas fa-network-wired" style="font-size: 60px; color: #F48020;"></i>
                             </div>
-                            <div class="details-caption">
-                                <p>Pavicon Group delivers world-class project execution, ensuring every milestone is met
-                                    with precision and quality. Our projects range from large-scale infrastructure
-                                    developments to specialized engineering solutions.</p>
-
-                                <p class="mb-50">We pride ourselves on our technical expertise, innovative approach, and
-                                    commitment to sustainability. Each project is a testament to our dedication to
-                                    building a better future for our clients and communities.</p>
-
-                                <h3>Project Excellence</h3>
-                                <p class="mb-50">Our team works tirelessly to overcome challenges and deliver results
-                                    that exceed expectations. We leverage cutting-edge technology and best practices to
-                                    ensure project success.</p>
-
-                                <h3>Overcoming Challenges</h3>
-                                <p>Every project presents unique challenges. At Pavicon, we view challenges as
-                                    opportunities to innovate and demonstrate our problem-solving capabilities. We work
-                                    closely with stakeholders to ensure seamless project delivery.</p>
+                            <div>
+                                <h3
+                                    style="color: #F48020; font-weight: 700; margin: 0; line-height: 1; font-size: 40px; text-transform: none;">
+                                    Our Portfolio</h3>
+                                <h2 id="project-subtitle"
+                                    style="color: #1A237E; font-weight: 700; margin: 0; font-size: 36px; margin-top: 5px;">
+                                    Loading...</h2>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Top Content Row -->
+                <div class="row align-items-stretch" id="project-top-row">
+                    <!-- Left: Vertical Images -->
+                    <div class="col-lg-7">
+                        <div class="row" id="vertical-images-container">
+                            <!-- JS will inject images here -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Project Brief -->
+                    <div class="col-lg-5">
+                        <div class="project-brief-box" style="box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                            <!-- Orange Header -->
+                            <div class="brief-header"
+                                style="background-color: #F48020; padding: 15px; text-align: center;">
+                                <h4 style="color: white; margin: 0; font-weight: 700; font-size: 24px;">Project Brief
+                                </h4>
+                            </div>
+                            <!-- Table -->
+                            <div class="brief-content" style="background: #fff;">
+                                <table class="table table-bordered mb-0" style="border: 1px solid #dee2e6;">
+                                    <tbody id="project-brief-body">
+                                        <!-- Dynamic Brief Rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Description below table or ignored? User image doesn't show description text clearly. 
+                             It seems the "Scope" covers it. 
+                             However, I should probably keep the description somewhere just in case. 
+                             I'll add it below the table for now, hidden or small. 
+                             Actually, looking at the image, there is NO description text block. 
+                             I will hide the description for now or put it below the images if needed. 
+                             I'll add a hidden container for it. -->
+                        <div id="project-description-container" style="margin-top: 30px; display: none;">
+                            <p id="project-description">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Gallery Row -->
+                <div class="row mt-30 mb-50" id="bottom-gallery-container">
+                    <!-- JS will inject remaining images here -->
+                </div>
             </div>
         </div>
-        <!-- Services Details End -->
+        <!-- Project Details End -->
     </main>
     <footer>
         <!-- Footer Start-->
@@ -310,6 +351,8 @@
 
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/projects-data.js"></script>
+    <script src="./assets/js/project-details.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>

@@ -265,8 +265,9 @@ p {
 
 /* "Let's discuss" Spacing Fix */
 .contact-with-area {
-    padding-top: 80px !important;
+    padding-top: 40px !important;
     padding-bottom: 150px !important;
+    background-color: var(--primary-navy) !important;
 }
 
 /* CountDown Text & Spacing Refinement */
@@ -277,6 +278,7 @@ p {
 
 .count-area {
     margin-bottom: 50px !important;
+    background-color: var(--primary-navy) !important;
 }
 
 /* Hide Background Text Globally */
@@ -331,4 +333,83 @@ p {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+/* Global Service Card Styling (Fix for Project Cards) */
+.single-service-cap .service-cap {
+    padding: 20px 30px 20px 30px !important;
+}
+
+.single-service-cap .service-cap h4 {
+    margin-bottom: 35px !important;
+}
+
+.single-service-cap .service-cap h4 a {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: var(--primary-navy) !important;
+}
+
+.single-service-cap .service-cap h4 a:hover {
+    color: var(--primary-orange) !important;
+}
+
+.single-service-cap .service-icon img {
+    width: 100%;
+}
+
+/* Force Spacing for Project Columns */
+/* Force Spacing for Project Columns */
+.project-caption .single-service-cap {
+    margin-bottom: 30px !important;
+}
+
+/* Ensure Project Row is Flexbox for Equal Heights */
+.project-caption .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-caption .col-lg-4,
+.project-caption .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure Project Card takes full height */
+.project-caption .single-service-cap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Project Details Image Alignment */
+#project-top-row .col-lg-7,
+#project-top-row .col-lg-5 {
+    display: flex;
+    flex-direction: column;
+}
+
+#vertical-images-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensure col-6 wrap correctly */
+}
+
+.project-brief-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.brief-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-responsive {
+    height: 100%;
 }
