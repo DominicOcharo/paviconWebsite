@@ -58,7 +58,7 @@
                         bottomContainer.append(`
                             <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="single-gallery-image mb-30">
-                                    <img src="${project.images[i]}" alt="" class="img-fluid" style="width: 100%; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                    <img src="${project.images[i]}" alt="" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                                 </div>
                             </div>
                         `);
